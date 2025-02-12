@@ -3,5 +3,5 @@
     "features": {
         "ghcr.io/devcontainers/features/docker-outside-of-docker:1": {}
     },
-    "postStartCommand": "/bin/bash .devcontainer/init.sh"
+    "postStartCommand": "chmod +x .devcontainer/init.sh && .devcontainer/init.sh"
 }

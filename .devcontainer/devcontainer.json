@@ -1,10 +1,7 @@
 {
     "name": "Test",
-    "build": {
-        "dockerfile": "Dockerfile"
-    },
     "mounts": [
         "source=/var/run/docker.sock,target=/var/run/docker.sock,type=bind"
     ],
-    "postCreateCommand": "/bin/bash .devcontainer/init.sh"
+    "postStartCommand": "/bin/bash .devcontainer/init.sh"
 }
